@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Training by [Your Name] - Achieve Your Fitness Goals">
+    <title>Personal Training by [Your Name]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to [Your Name]'s Personal Training</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm [Your Name], a certified personal trainer dedicated to helping clients achieve their fitness goals.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services & Pricing</h2>
+        <ul>
+            <li>🔹 One-on-One Training</li>
+            <li>🔹 Group Training</li>
+            <li>🔹 Online Coaching</li>
+            <li>🔹 Nutrition Guidance</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Customer Reviews</h2>
+        <a href="https://search.google.com/local/writereview?placeid=YOUR_GOOGLE_PLACE_ID" target="_blank">
+            <button>Leave a Google Review</button>
+        </a>
+
+        <h3>Submit a Review</h3>
+        <form action="submit_review.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <h3>Latest Reviews</h3>
+        <div id="review-list"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Your Name] | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
